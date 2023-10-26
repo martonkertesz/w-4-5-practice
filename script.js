@@ -17,8 +17,9 @@ const data = [
         }
         ]
     }
-    ame: "Lefold Elek",
-        age: 91,
+       {
+        name: "Lefold Elek",
+        age: 95,
         subjects: [
             {
                 subjectName: "Maths",
@@ -31,6 +32,24 @@ const data = [
         {
             subjectName: "English",
             subjectGrade: 5
+        }
+        ]
+    }
+    {
+        name: "Kis Peter Elek",
+        age: 16,
+        subjects: [
+            {
+                subjectName: "Maths",
+                subjectGrade: 2
+            },
+            {
+                subjectName: "Physics",
+                subjectGrade: 5
+        },
+        {
+            subjectName: "English",
+            subjectGrade: 4
         }
         ]
     }
