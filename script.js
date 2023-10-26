@@ -1,4 +1,4 @@
-const data = [
+const studentsData = [
     {
         name: "Kovacs Janos",
         age: 29,
@@ -55,13 +55,12 @@ const data = [
     }
 ]
 
-for (let i = 0; i < data.length; i++) {
-    console.log(data[i].name)
+for (let i = 0; i < studentsData.length; i++) {
+    console.log(studentsData[i].name)
     
 }
 
-data.forEach(student =>  {
+studentsData.forEach(student =>  {
 console.log(student.name)
-
 student.subjects.forEach(subject => console.log(`${subject.subjectName}: ${subject.subjectGrade}`))
 })
