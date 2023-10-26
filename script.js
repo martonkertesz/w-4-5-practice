@@ -60,7 +60,7 @@ for (let i = 0; i < data.length; i++) {
     
 }
 
-students.forEach(student =>  {
+data.forEach(student =>  {
 console.log(student.name)
 
 student.subjects.forEach(subject => console.log(`${subject.subjectName}: ${subject.subjectGrade}`))
