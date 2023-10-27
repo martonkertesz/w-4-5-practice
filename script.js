@@ -45,7 +45,7 @@ console.log(arr.reverse()) // megforditja az array elemeinek sorrendjet
 console.log(arr.join("")) //az array elemeit egymas melle irja, koztuk a megadott karakterrel */
 
 
-const obj = {
+/* const obj = {
     name: "Gipsz Jakab",
     age: 27,
     pets: [
@@ -58,4 +58,38 @@ const obj = {
 for (const key of Object.keys(obj)) { //adott kulcs objectjein igy tudunk vegig iteralni; megkapom az osszes kulcs nevet es erteket
     console.log(key, ":", obj[key])
 }
-console.log(Object.entries(obj))
+console.log(Object.entries(obj)) */
+
+
+
+const users = [
+    {
+        name: "John Doe",
+        age: 33
+    },
+    {
+        name: "Kovacs Janos",
+        age: 54
+    },
+    {
+        name: "Kertesz Marton",
+        age: 31
+    }
+
+]
+
+// const userNames = []
+/* const result = users.forEach((user) => {
+return user.name
+})
+console.log(userNames) */
+
+const userNames = users.map((user, index) => {
+return {
+    username: user.name,
+    age: user.age,
+    id: index + 1
+}
+})
+
+console.log(userNames)
